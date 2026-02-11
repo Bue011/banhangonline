@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Soul - Thời trang cổ điển</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+    <div class="logo">VINTAGE SOUL</div>
+    <ul class="nav-links">
+        <li><a href="#">Nam</a></li>
+        <li><a href="#">Nữ</a></li>
+        <li><a href="#" id="cart-icon">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Timeless Elegance</h1>
+            <p>Khám phá phong cách hoài cổ qua từng đường kim mũi chỉ.</p>
+            <a href="#" class="btn">Mua Ngay</a>
+        </div>
+    </section>
+
+    <section class="products">
+    <h2>Sản phẩm mới nhất</h2>
+    <div class="product-grid">
+        <div class="product-item" data-id="1" data-name="Áo Blazer Dạ" data-price="950000">
+            <div class="img-placeholder">Áo Blazer Dạ</div>
+            <h4>Áo Blazer Dạ</h4>
+            <p class="price">950,000đ</p>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product-item" data-id="2" data-name="Váy Lụa Retro" data-price="1200000">
+            <div class="img-placeholder">Váy lụa Retro</div>
+            <h4>Váy Lụa Retro</h4>
+            <p class="price">1,200,000đ</p>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product-item" data-id="3" data-name="Quần Tây Ống Rộng" data-price="750000">
+            <div class="img-placeholder">Quần Tây Ống Rộng</div>
+            <h4>Quần Tây Ống Rộng</h4>
+            <p class="price">750,000đ</p>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+    </div>
+</section>
+
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-content">
+        <div class="cart-header">
+            <h3>Giỏ hàng</h3>
+            <span id="close-cart" style="cursor:pointer; font-size: 24px;">&times;</span>
+        </div>
+        
+        <div id="cart-items-list"></div> 
+    </div>
+
+    <div class="cart-footer">
+        <div class="total-box">
+            <span>Tổng cộng:</span>
+            <span id="total-price">0đ</span>
+        </div>
+        <div class="checkout-form">
+            <input type="text" id="customer-name" placeholder="Tên của bạn">
+            <input type="tel" id="customer-phone" placeholder="Số điện thoại">
+            <textarea id="customer-address" placeholder="Địa chỉ"></textarea>
+            <button id="confirm-order" class="btn-checkout">XÁC NHẬN ĐẶT HÀNG</button>
+        </div>
+    </div>
+</div>
+<div id="overlay"></div>
+    
+<script src="script.js"></script>
+<a href="https://zalo.me/84765932428" target="_blank" class="zalo-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Chat Zalo">
+</a>
+<a href="links.html" class="floating-contact">
+    <i class="fa-solid fa-link"></i> Liên hệ
+</a>
+</body>
+</html>
