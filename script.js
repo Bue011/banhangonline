@@ -216,7 +216,8 @@ ${orderDetails}
             name: name,
             phone:"'" + phone,
             address: address,
-            total: total
+            total: total,
+            status: "Ghi chú"
         
         })
                       

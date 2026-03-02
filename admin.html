@@ -76,6 +76,7 @@ Tổng doanh thu: 0đ
 <th>SĐT</th>
 <th>Địa chỉ</th>
 <th>Tổng</th>
+<th>Ghi chú</th>
 </tr>
 </thead>
 <tbody></tbody>
@@ -123,6 +124,10 @@ async function loadOrders() {
         totalRevenue += total;
 
         const tr = document.createElement("tr");
+        
+
+        const status = cols[6] || "Ghi chú";
+
         tr.innerHTML = `
             <td>${time}</td>
             <td>${product}</td>
@@ -130,6 +135,7 @@ async function loadOrders() {
             <td>${phone}</td>
             <td>${address}</td>
             <td>${total.toLocaleString()}đ</td>
+            <td>${status}</td>
         `;
         tbody.appendChild(tr);
     }
