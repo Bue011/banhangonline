@@ -276,7 +276,17 @@ async function finishPayment(orderId) {
         });
 
         alert("Shop đã nhận được thông báo. Vui lòng chờ xác nhận.");
+        // Xóa giỏ hàng sau khi xác nhận thanh toán
+        cart = [];
+        localStorage.removeItem('vintage_cart');
+        renderCart();
 
+        // Ẩn QR
+        document.getElementById("qr-container").style.display = "none";
+
+        // Đóng sidebar
+        cartSidebar.classList.remove("active");
+        overlay.classList.remove("active");
     } catch (error) {
         console.error(error);
         alert("Lỗi gửi thông báo!");
